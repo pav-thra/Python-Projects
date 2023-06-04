@@ -1,0 +1,8 @@
+n=int(input("Enter the binary equivalent of decimal"))
+def count(n):
+    if n<=1:
+       return 1
+    else:
+        return 1+count(n//10)
+print("the number of binary bits is ",count(n))   
+
